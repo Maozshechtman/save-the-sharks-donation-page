@@ -63,7 +63,7 @@ function DonationPage() {
      <div style={{backgroundColor: 'rgba(0, 0, 0, 0.09)'}}>
         
         < Grid container justify='space-between' direction='column'  alignItems='center' spacing={6}>
-        <Grid item>
+        <Grid item >
           <img src={header} style={{'width':'100%','height':'10%'}}/>
         </Grid>
         <Divider classes={{root: classes.divider}}  variant='middle'/>                   
