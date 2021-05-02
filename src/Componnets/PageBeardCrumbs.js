@@ -8,19 +8,21 @@ const useStyles = makeStyles((theme) => ({
     root: {
       '& > * + *': {
         marginTop: theme.spacing(2),
+        color: theme.palette.primary.dark
       },
+      
     },
   }));
 
 function PageBeardCrumbs(props) {
-
+    
     const classes = useStyles();
     return (
         <div className={classes.root} dir='rtl'>
             <Breadcrumbs separator={<NavigateBeforeOutlinedIcon fontSize="small" />} aria-label="breadcrumb">
-                    <p><strong>בחירת התרומה</strong></p>
-                    <p>פרטים אישיים</p>
-                    <p>פרטי תשלום</p>
+                    <p style={{color:'navy'}}><strong>בחירת התרומה</strong></p>
+                    <p  style={{color:'navy'}} className={classes.pStyle} >פרטים אישיים</p>
+                    <p style={{color:'navy'}} className={classes.pStyle} >פרטי תשלום</p>
             </Breadcrumbs>
 
         </div>

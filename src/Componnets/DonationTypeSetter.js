@@ -22,7 +22,7 @@ const StyledCheckbox = withStyles({
 })((props) => <Checkbox color="default" {...props} />);
 
 
-function PaymetCheckboxes(props) {
+function DonationTypeSetter(props) {
  //State settings and use effect
   const[isStandingOrder,setStandingOrder] = useState(false);
   const[numberOfMonths,setNumberOfMonths] = useState(1)
@@ -70,7 +70,7 @@ function PaymetCheckboxes(props) {
     
     return (
         <div  dir='rtl' >
-          <Grid  container direction="row" justify="space-between" alignItems="center" spacing={8} >
+          <Grid  container direction="row" justify="space-between" alignItems="flex-end" spacing={10} >
           <Grid item >
             <StyledCheckbox name="one_time_payment" checked={!isStandingOrder} onChange={handleIsStandingOrderChange} color="primary"/> 
             {singlePyamentTitle}   &nbsp; 
@@ -95,4 +95,4 @@ function PaymetCheckboxes(props) {
     );
 }
 
-export default PaymetCheckboxes;
+export default DonationTypeSetter;
