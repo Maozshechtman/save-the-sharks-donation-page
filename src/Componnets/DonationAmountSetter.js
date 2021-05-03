@@ -16,21 +16,19 @@ const useStyles = makeStyles((theme)=>({
    text:{
        color: theme.palette.primary.dark
    },
+   
    btn:{
     background: '#fff',
     color: theme.palette.primary.dark,
     fontSize: '20px'
    },
+
    myinput:{
       background: '#fff' ,
       height:'75px',
-      color: theme.palette.primary.dark,
-      
-    
+      color: theme.palette.primary.dark, 
    },
-   fontReSize:{
-        fontSize:'50px'
-   },
+   
    adorment:{
        color: theme.palette.primary.dark
    }
